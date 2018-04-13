@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.library.tool.dao.entity.LiBookcateEntity" table="li_bookcate" schema="dbo" catalog="library">
+        <id name="scode">
+            <column name="scode" sql-type="nvarchar(20)" length="20"/>
+        </id>
+        <property name="sname">
+            <column name="sname" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="kemu">
+            <column name="kemu" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+        <many-to-one name="liBookcateByPcode" class="org.library.tool.dao.entity.LiBookcateEntity">
+            <column name="pcode" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

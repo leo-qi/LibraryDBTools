@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.library.tool.dao.entity.LiJieyueEntity" table="li_jieyue" schema="dbo" catalog="library">
+        <id name="id">
+            <column name="id" sql-type="uniqueidentifier"/>
+        </id>
+        <property name="dwid">
+            <column name="dwid" sql-type="nvarchar(50)" length="50"/>
+        </property>
+        <property name="jieyueriqi">
+            <column name="jieyueriqi" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="jieyuecishu">
+            <column name="jieyuecishu" sql-type="bigint" not-null="true"/>
+        </property>
+        <property name="xujieriqi">
+            <column name="xujieriqi" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="geihuanriqi">
+            <column name="geihuanriqi" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="sfgh">
+            <column name="sfgh" sql-type="int" not-null="true"/>
+        </property>
+        <property name="jieyueczy">
+            <column name="jieyueczy" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="guihuanczy">
+            <column name="guihuanczy" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="jieyueshu">
+            <column name="jieyueshu" sql-type="decimal(18)" precision="18" not-null="true"/>
+        </property>
+        <property name="guihuaceshu">
+            <column name="guihuaceshu" sql-type="decimal(18)" precision="18" not-null="true"/>
+        </property>
+        <property name="xjcs">
+            <column name="Xjcs" sql-type="int" not-null="true"/>
+        </property>
+        <property name="yfje">
+            <column name="Yfje" sql-type="float" precision="-1" not-null="true"/>
+        </property>
+        <property name="sfje">
+            <column name="Sfje" sql-type="float" precision="-1" not-null="true"/>
+        </property>
+        <property name="fkyy">
+            <column name="Fkyy" sql-type="nvarchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="fkrq">
+            <column name="Fkrq" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="oprater">
+            <column name="Oprater" sql-type="nvarchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="memo">
+            <column name="Memo" sql-type="nvarchar(100)" length="100" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

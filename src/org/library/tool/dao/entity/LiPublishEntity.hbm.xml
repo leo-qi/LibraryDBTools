@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.library.tool.dao.entity.LiPublishEntity" table="li_publish" schema="dbo" catalog="library">
+        <id name="isbn">
+            <column name="isbn" sql-type="nvarchar(50)" length="50"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="nvarchar(80)" length="80" not-null="true"/>
+        </property>
+        <property name="addr">
+            <column name="addr" sql-type="nvarchar(100)" length="100" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

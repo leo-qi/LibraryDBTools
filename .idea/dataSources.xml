@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="library@192.168.1.3" uuid="046bf2aa-9717-444d-b095-2d7b279c2ac2">
+      <driver-ref>sqlserver.jtds</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sqlserver://192.168.1.3:1433/library</jdbc-url>
+      <driver-properties>
+        <property name="appName" value="DataGrip" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

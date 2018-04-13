@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.library.tool.dao.entity.LiKuCunEntity" table="li_KuCun" schema="dbo" catalog="library">
+        <id name="id">
+            <column name="ID" sql-type="uniqueidentifier"/>
+        </id>
+        <property name="ldt">
+            <column name="LDT" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="dwId">
+            <column name="dwID" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="ruKuDanHao">
+            <column name="RuKuDanHao" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="keMu">
+            <column name="KeMu" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="zhengtiming">
+            <column name="zhengtiming" sql-type="nvarchar(500)" length="500" not-null="true"/>
+        </property>
+        <property name="fenleiName">
+            <column name="fenleiName" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="chubandi">
+            <column name="chubandi" sql-type="nvarchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="chubanName">
+            <column name="chubanName" sql-type="nvarchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="chubanriqi">
+            <column name="chubanriqi" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="tiaoma">
+            <column name="tiaoma" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="isbn">
+            <column name="ISBN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="unit">
+            <column name="unit" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="danJia">
+            <column name="DanJia" sql-type="decimal(19,2)" precision="19" scale="2" not-null="true"/>
+        </property>
+        <property name="shuLiang">
+            <column name="ShuLiang" sql-type="int" not-null="true"/>
+        </property>
+        <property name="jine">
+            <column name="jine" sql-type="decimal(19,2)" precision="19" scale="2" not-null="true"/>
+        </property>
+        <property name="gouZhiRiQi">
+            <column name="GouZhiRiQi" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="gysname">
+            <column name="gysname" sql-type="nvarchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="beizhu">
+            <column name="beizhu" sql-type="nvarchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="bookInputCode">
+            <column name="BookInputCode" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="author">
+            <column name="Author" sql-type="nvarchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="bookType">
+            <column name="BookType" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="keywords">
+            <column name="Keywords" sql-type="nvarchar(300)" length="300" not-null="true"/>
+        </property>
+        <property name="seriesName">
+            <column name="SeriesName" sql-type="nvarchar(300)" length="300" not-null="true"/>
+        </property>
+        <property name="editionTime">
+            <column name="EditionTime" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="bookLanguage">
+            <column name="BookLanguage" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="bookFaceInfo">
+            <column name="BookFaceInfo" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="boolAddons">
+            <column name="BoolAddons" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="cn">
+            <column name="CN" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="publishPeriods">
+            <column name="PublishPeriods" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="upDept">
+            <column name="UpDept" sql-type="nvarchar(100)" length="100" not-null="true"/>
+        </property>
+        <property name="contentIntro">
+            <column name="ContentIntro" sql-type="nvarchar(400)" length="400" not-null="true"/>
+        </property>
+        <property name="regdate">
+            <column name="Regdate" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="operator">
+            <column name="Operator" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="suoshuhao">
+            <column name="suoshuhao" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="szshushi">
+            <column name="szshushi" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="skjiawei">
+            <column name="skjiawei" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="picture">
+            <column name="Picture" sql-type="image" not-null="true"/>
+        </property>
+        <property name="sfbm">
+            <column name="sfbm" sql-type="int" not-null="true"/>
+        </property>
+        <property name="bfbz">
+            <column name="bfbz" sql-type="int" not-null="true"/>
+        </property>
+        <property name="bsbz">
+            <column name="bsbz" sql-type="int" not-null="true"/>
+        </property>
+        <property name="dsbz">
+            <column name="dsbz" sql-type="int" not-null="true"/>
+        </property>
+        <many-to-one name="liBookcateByFenleihao" class="org.library.tool.dao.entity.LiBookcateEntity">
+            <column name="fenleihao" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

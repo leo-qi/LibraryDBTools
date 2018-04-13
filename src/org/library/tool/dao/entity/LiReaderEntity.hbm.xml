@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.library.tool.dao.entity.LiReaderEntity" table="li_reader" schema="dbo" catalog="library">
+        <id name="id">
+            <column name="ID" sql-type="uniqueidentifier"/>
+        </id>
+        <property name="readerCode">
+            <column name="ReaderCode" sql-type="nvarchar(50)" length="50"/>
+        </property>
+        <property name="readerName">
+            <column name="ReaderName" sql-type="nvarchar(50)" length="50"/>
+        </property>
+        <property name="readerInputCode">
+            <column name="ReaderInputCode" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="cardId">
+            <column name="CardId" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="readerCateId">
+            <column name="ReaderCateId" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="bit" not-null="true"/>
+        </property>
+        <property name="brithDate">
+            <column name="BrithDate" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="corpName">
+            <column name="CorpName" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="deptName">
+            <column name="DeptName" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="idCard">
+            <column name="IdCard" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="workCard">
+            <column name="WorkCard" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="workPhone">
+            <column name="WorkPhone" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="homePhone">
+            <column name="HomePhone" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="mobilePhone">
+            <column name="MobilePhone" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="eMail">
+            <column name="EMail" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="address">
+            <column name="Address" sql-type="nvarchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="memo">
+            <column name="Memo" sql-type="nvarchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="regDate">
+            <column name="RegDate" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="operator">
+            <column name="Operator" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="dwid">
+            <column name="dwid" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="picture">
+            <column name="picture" sql-type="image" not-null="true"/>
+        </property>
+        <property name="printoff">
+            <column name="printoff" sql-type="int" not-null="true"/>
+        </property>
+        <property name="cardpass">
+            <column name="cardpass" sql-type="nvarchar(50)" length="50" not-null="true"/>
+        </property>
+        <property name="question">
+            <column name="question" sql-type="nvarchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="answer">
+            <column name="answer" sql-type="nvarchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="czdate">
+            <column name="czdate" sql-type="datetime" not-null="true"/>
+        </property>
+        <property name="yaJin">
+            <column name="YaJin" sql-type="float" precision="-1" not-null="true"/>
+        </property>
+        <property name="yjbz">
+            <column name="yjbz" sql-type="int" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
